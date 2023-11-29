@@ -7,7 +7,7 @@ using UnityEngine;
     /// 프리팹 사전로딩 기능을 갖고 있고 - 풀링을 위한 기능이기도 합니다.
     /// 이팩트 인스턴스 기능도 갖고 있으며 - 풀링과 연계해서 사용하기도 합니다.
     /// </summary>
-public class EffectClip : MonoBehaviour {
+public class EffectClip {
         
     public int realId = 0;
     public EffectType effectType = EffectType.NORMAL;
