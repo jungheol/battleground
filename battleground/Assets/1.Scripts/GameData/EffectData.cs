@@ -138,7 +138,7 @@ public class EffectData : BaseData {
         return effectClips[index];
     }
     
-    public void Copy(int index) {
+    public override void CopyData(int index) {
         this.names = ArrayHelper.Add(this.names[index], this.names);
         this.effectClips = ArrayHelper.Add(GetCopy(index), this.effectClips);
     }
