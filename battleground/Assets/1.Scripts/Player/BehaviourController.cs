@@ -126,12 +126,12 @@ public class BehaviourController : MonoBehaviour {
             foreach (GenericBehaviour behaviour in behaviours) {
                 if (behaviour.isActiveAndEnabled && currentBehaviour == behaviour.GetBehaviourCode) {
                     isAnyBehaviourActive = true;
-                    behaviour.LocalFixedUpdata();
+                    behaviour.LocalFixedUpdate();
                 }
             }
         } else {
             foreach (GenericBehaviour behaviour in overrideBehaviours) {
-                behaviour.LocalFixedUpdata();
+                behaviour.LocalFixedUpdate();
             }
         }
 
@@ -266,7 +266,7 @@ public abstract class GenericBehaviour : MonoBehaviour {
         
     }
 
-    public virtual void LocalFixedUpdata() {
+    public virtual void LocalFixedUpdate() {
         
     }
 
