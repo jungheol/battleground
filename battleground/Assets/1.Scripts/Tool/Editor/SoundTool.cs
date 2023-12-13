@@ -34,7 +34,7 @@ public class SoundTool : EditorWindow {
 		EditorGUILayout.BeginVertical();
 		{
 			Object source = soundSource;
-			SoundClip sound = soundData.soundClips[selection];
+			// SoundClip sound = soundData.soundClips[selection];
 			EditorHelper.EditorToolTopLayer(soundData, ref selection, ref source, uiWidthMiddle);
 			soundSource = (AudioClip)source;
 
@@ -43,7 +43,7 @@ public class SoundTool : EditorWindow {
 			{
 				EditorHelper.EditorToolListLayer(ref SP1, soundData, ref selection, ref source, uiWidthMiddle);
 				soundSource = (AudioClip)source;
-
+				SoundClip sound = soundData.soundClips[selection];
 				EditorGUILayout.BeginVertical();
 				{
 					this.SP2 = EditorGUILayout.BeginScrollView(this.SP2);
